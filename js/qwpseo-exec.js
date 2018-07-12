@@ -3,8 +3,9 @@
  /wp-admin/post-new.php
  /wp-admin/term.php
 */
-jQuery(document).ready(
-function($){
+jQuery(window).on("YoastSEO:ready",
+function(){
+    var $ = jQuery;
 	if(!window.YoastSEO.app)
 		return;
 
